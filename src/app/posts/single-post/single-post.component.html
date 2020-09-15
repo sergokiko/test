@@ -1,0 +1,6 @@
+<h2>Single post</h2>
+<div class="card" *ngIf="post">
+  <input #ele type="number" placeholder="post ID">
+  <button class="btn"  (click)="showSinglePost(+ele.value)"  style="margin-bottom: 1rem" >show post with ID</button>
+  <div class="posts">ID:{{post.id}} <br> Title: {{post.title}} <br> Body: {{post.body}} </div>
+</div>

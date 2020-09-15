@@ -1,5 +1,5 @@
 <h2>Users</h2>
-<div *ngFor="let user of users">
+<div  class="card" *ngFor="let user of users">
   email:{{user.email}} <br>
   name: {{user.name}}<br>
   username:{{user.username}}<br>
@@ -9,4 +9,5 @@
   suite:{{user.address.suite}}<br>
   zip:{{user.address.zipcode}}<br>
   <hr>
+  <button class="btn" (click)="showPostOfUser(user.id)">Show users post</button>
 </div>

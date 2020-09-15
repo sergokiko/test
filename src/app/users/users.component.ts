@@ -18,4 +18,10 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+  showPostOfUser(id: number): void {
+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
+      .then(response => response.json())
+      .then(json => console.log(json));
+  }
+  }
+

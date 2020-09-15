@@ -13,7 +13,7 @@ export class PostService {
 
   }
   getPosts(): Observable<PostsModel[]>{
-    return this.http.get<PostsModel[]>('https://jsonplaceholder.typicode.com/posts?_limit=10');
+    return this.http.get<PostsModel[]>('https://jsonplaceholder.typicode.com/posts');
   }
 
 }

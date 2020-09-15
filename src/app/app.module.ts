@@ -5,18 +5,22 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
-import { TodoComponent } from './todo/todo.component';
+import { CommentsComponent } from './comments/comments.component';
+import {AppRoutingModule} from './app-routing.module';
+import { SinglePostComponent } from './posts/single-post/single-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     UsersComponent,
-    TodoComponent
+    CommentsComponent,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

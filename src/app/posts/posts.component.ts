@@ -23,4 +23,9 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+async showComments(id: number): Promise<void> {
+  fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
+     .then(response => response.json())
+     .then(json => console.log(json));
+  }
 }
