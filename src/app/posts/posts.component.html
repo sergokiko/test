@@ -5,5 +5,8 @@
   ID:{{post.id}} <br>
   <strong>Title: {{post.title}} <br></strong>
   Body: {{post.body}}<br>
-<button class="btn" (click)="showComments(post.id)">Show post Comments</button>
+<button class="btn" (click)="goToDetails(post)">Show post Details</button>
+  <button class="btn" [routerLink]="['comments', post.id]">getMyCommentsByParams</button>
+
 </div>
+<router-outlet></router-outlet>

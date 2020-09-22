@@ -11,7 +11,7 @@ export class CommentsComponent implements OnInit {
   commentsList: CommentModel[] = [];
 
   constructor(private commentService: CommentsService) {
-    this.commentService.getTodos().subscribe(comments => {
+    this.commentService.getComments().subscribe(comments => {
       this.commentsList = comments;
     });
   }

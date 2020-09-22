@@ -8,6 +8,11 @@ import { UsersComponent } from './users/users.component';
 import { CommentsComponent } from './comments/comments.component';
 import {AppRoutingModule} from './app-routing.module';
 import { SinglePostComponent } from './posts/single-post/single-post.component';
+import { UserPostsComponent } from './user-posts/user-posts.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { PostsCommentsComponent } from './posts-comments/posts-comments.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { SinglePostComponent } from './posts/single-post/single-post.component';
     PostsComponent,
     UsersComponent,
     CommentsComponent,
-    SinglePostComponent
+    SinglePostComponent,
+    UserPostsComponent,
+    MainPageComponent,
+    PostsCommentsComponent,
+    UserInfoComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
