@@ -13,6 +13,7 @@ const routes: Routes = [
         ]},
       {path: 'posts',  loadChildren: () => import('./modules/post/post.module').then(m => m.PostModule)},
       {path: 'comments', loadChildren: () => import('./modules/comments/comments.module').then(m => m.CommentsModule) },
+      {path: 'forms', loadChildren: () => import('./modules/forms/form.module').then(m => m.FormModule) }
     ]},
 
 ];

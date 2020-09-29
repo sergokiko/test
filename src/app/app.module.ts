@@ -9,6 +9,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import {PostModule} from './modules/post/post.module';
 import {CommentsModule} from './modules/comments/comments.module';
+import {FormModule} from './modules/forms/form.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import {CommentsModule} from './modules/comments/comments.module';
     HttpClientModule,
     AppRoutingModule,
     PostModule,
-    CommentsModule
+    CommentsModule,
+    FormModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
