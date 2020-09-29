@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PostsModel} from '../../models/post.model';
-import {SinglePostService} from '../../service/single-post.service';
+import {PostsModel} from '../../../../../models/post.model';
+import {SinglePostService} from '../../../../../service/single-post.service';
 
 @Component({
   selector: 'app-single-post',

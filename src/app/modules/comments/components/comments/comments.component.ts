@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CommentModel} from '../models/comment.model';
-import {CommentsService} from '../service/comments.service';
+import {CommentModel} from '../../../../models/comment.model';
+import {CommentsService} from '../../../../service/comments.service';
 
 @Component({
   selector: 'app-todo',

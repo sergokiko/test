@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {CommentModel} from '../models/comment.model';
+import {CommentModel} from '../../../../models/comment.model';
 import {ActivatedRoute, RouterModule} from '@angular/router';
-import {CommentsService} from '../service/comments.service';
+import {CommentsService} from '../../../../service/comments.service';
 
 @Component({
   selector: 'app-posts-comments',

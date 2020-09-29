@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 
 
-import {PostService} from '../service/post.service';
-import {PostsModel} from '../models/post.model';
+import {PostService} from '../../../../service/post.service';
+import {PostsModel} from '../../../../models/post.model';
 import {ActivatedRoute, Router} from '@angular/router';
 
 
