@@ -1,0 +1,18 @@
+<h2>Select which user to show</h2>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <select formControlName="userId">
+    <option *ngFor="let u of users">{{u.id}}</option>
+  </select>
+  <button class="btn" type="submit" >Show user</button>
+</form>
+<div *ngIf="user" class="card">
+  id: {{user.id}}<br>
+  email:{{user.email}} <br>
+  name: {{user.name}}<br>
+  username:{{user.username}}<br>
+  address:<br>
+  city: {{user.address.city}}<br>
+  street:{{user.address.street}}<br>
+  suite:{{user.address.suite}}<br>
+  zip:{{user.address.zipcode}}<br>
+</div>
